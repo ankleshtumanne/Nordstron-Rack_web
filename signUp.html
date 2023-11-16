@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        div{
+            margin: auto;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+            height: 500px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a style="text-align: center;" href="./signIN.html"><button>Login</button></a>
+        <h1 style="text-align: center;">Sign UP to Best Buy</h1>
+        <form id="form">
+            <input type="text" placeholder="Email Address" name="" id="inp1">
+            <br>
+            <input type="password" placeholder="password" id="inp2">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    let form1=document.getElementById("form")
+    let input1=document.getElementById("inp1")
+    let input2=document.getElementById("inp2")
+    form1.addEventListener('submit',function(event){
+        event.preventDefault()
+        let userdetails={
+            input1:input1.value,
+            input2:input2.value
+        }
+       localStorage.setItem('userdetails',JSON.stringify(userdetails));
+    })
+</script>
+
+
+
+
