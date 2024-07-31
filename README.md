@@ -31,5 +31,5 @@ The Nordstrom Rack Clone is a full-stack web application designed to mimic the f
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/nordstrom-rack-clone.git
+   git clone https://github.com/ankleshtumanne/nordstrom-rack-clone.git
    cd nordstrom-rack-clone
